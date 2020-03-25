@@ -12,3 +12,15 @@
 # Spark WebUI
 - ./sbin/start-master.sh
     - 启动master结点
+
+# 运行多任务程序
+
+```python
+params = [1,2,3,4,5]
+def my_func(val):
+    print(val*val)
+
+rdd = sc.parallelize(params)
+
+rdd.foreach(my_func)
+```
