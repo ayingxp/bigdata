@@ -8,6 +8,8 @@
 - export SPARK_HOME=/usr/local/spark
 - export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.8-src.zip:$PYTHONPATH
 - export PATH=$SPARK_HOME/bin:$SPARK_HOME/python:$PATH
+- 编辑.bashrc文件, 添加如下内容
+    - export PYSPARK_PYTHON=/bbox/anaconda3/bin/python
 
 # Spark WebUI
 - ./sbin/start-master.sh
