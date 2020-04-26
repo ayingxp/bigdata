@@ -10,7 +10,9 @@
 - export PATH=$SPARK_HOME/bin:$SPARK_HOME/python:$PATH
 - 编辑.bashrc文件, 添加如下内容
     - export PYSPARK_PYTHON=/bbox/anaconda3/bin/python
-
+- 配置ipython
+    - export PYSPARK_DRIVER_PYTHON=ipython
+    - pyspark
 # Spark WebUI
 - ./sbin/start-master.sh
     - 启动master结点
